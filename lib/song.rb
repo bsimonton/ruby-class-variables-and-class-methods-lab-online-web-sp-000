@@ -16,13 +16,14 @@ def self.genres
 end
 
 def self.artists
-  @@artists
+  @@artists.uniq
 end
   
   
 def initialize(name, artist, genre)
 @@count += 1
 @@genres << genre
+@@artists << artists
 end 
   
   
